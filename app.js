@@ -17,6 +17,9 @@ app.use(router);
 app.get('/', (req, res) => {
     res.send('Hello World!')
 });
+app.get('/heroku', (req, res) => {
+    res.send('Hello heroku!')
+});
 
 app.listen(8000, () => { console.log('Example app listening on port 8000!') });
 
